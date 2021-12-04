@@ -52,8 +52,8 @@
 .header__link {
 }
 .header__main-illustration {
-  max-height: 765px;
-  max-width: 608px;
+  max-width: 765px;
+  max-height: 608px;
   position: absolute;
   z-index: 1;
   right: 0;
@@ -118,6 +118,61 @@ p {
 }
 .two-columns__paragraph-3 {
   margin-top: 30px;
+}
+.digits {
+  display: flex;
+  flex-direction: column;
+}
+.section-title {
+  display: flex;
+  width: 60%;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bolder;
+  align-self: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+.section-subtitle {
+  display: flex;
+  width: 60%;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  align-self: center;
+  margin-bottom: 0;
+  margin-top: 0;
+  justify-content: center;
+}
+.table__cells {
+  width: 1100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.table__cell {
+width: 250px;
+}
+.table__heading {
+line-height: 1.15;
+font-size: 24px;
+font-weight: bolder;
+margin-top: 60px;
+margin-bottom: 20px;
+}
+.table__text {
+line-height: 1.2;
+font-size: 18px;
+font-weight: normal;
+}
+.table__text-bottom {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 20px;
 }
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
