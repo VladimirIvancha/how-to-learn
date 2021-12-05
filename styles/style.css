@@ -1,4 +1,4 @@
-.page {
+.pager {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
   /* поэтому выше установлена минимальная ширина страницы */
@@ -27,7 +27,6 @@
   position: absolute;
   top: 30px;
   left: 64px;
-  color:
   z-index: 4;
 }
 .header__title {
