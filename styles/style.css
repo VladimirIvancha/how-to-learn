@@ -118,6 +118,9 @@
   margin-top: 0;
   margin-bottom: 30px;
 }
+.two-columns__main-text :last-child {
+  margin-bottom: 0;
+}
 .digits {
   display: flex;
   flex-direction: column;
@@ -159,18 +162,14 @@
   font-size: 24px;
   font-weight: bold;
   margin-top: 60px;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .table__text {
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-}
-.table__text-bottom {
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
   margin-top: 20px;
+  margin-bottom: 0;
 }
 .feynman {
   min-height: 890px;
@@ -209,6 +208,7 @@
   right: 48px;
   top: 50%;
   text-decoration: none;
+  z-index: 4;
 }
 .feynman__illustration {
   max-width: 867px;
@@ -219,8 +219,6 @@
   bottom: 0;
 }
 .kaufman {
-  min-height: 600px;
-  max-height: 756px;
   position: relative;
   display: flex;
   flex-direction: column;
