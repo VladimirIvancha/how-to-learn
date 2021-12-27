@@ -1,0 +1,8 @@
+.feynman__illustration {
+  max-width: 867px;
+  max-height: 637px;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+}

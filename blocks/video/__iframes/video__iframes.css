@@ -1,0 +1,7 @@
+.video__iframes {
+  margin-top: 50px;
+  margin-bottom: -40px;
+}
+.video__iframes :nth-child(2) {
+  margin-right: 0;
+}
