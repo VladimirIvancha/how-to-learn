@@ -9,7 +9,7 @@
 <body>
   <div class="page">
     <header class="header">
-      <img src="./images/logo_place_header.svg" alt="Лого" class="logo logo_place_header">
+      <img src="./images/logo_place_header.svg" alt="Логотип Яндекс Практикума." class="logo logo_place_header">
       <h1 class="header__title">
         Научиться учиться
       </h1>
@@ -19,10 +19,8 @@
           Узнать &xrarr;
         </a>
       </h2>
-      <div class="rotation">
-        <img src="images/header-image.png" alt="Снова двойка" class="header__main-illustration">
-        <div class="header__square-pic header__square-pic_rotation"></div>
-      </div>
+      <img src="images/header-image.png" alt="Картина снова двойка. Грустный мальчик дома после школы опустил голову под осуждающими взглядами семьи." class="header__main-illustration">
+      <div class="header__square-pic rotation"></div>
     </header>
     <main class="content">
       <section class="description">
@@ -44,27 +42,27 @@
         </h3>
         <div class="cards">
           <div class="cards__item">
-            <img src="images/cards-attention.png" alt="Два вида внимания pic" class="cards__image">
+            <img src="images/cards-attention.png" alt="Закрытая книга в женских руках." class="cards__image">
             <h4 class="cards__title">Два вида внимания</h4>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное мышление.</p>
           </div>
           <div class="cards__item">
-            <img src="images/cards-recall.png" alt="Воспоминание" class="cards__image">
+            <img src="images/cards-recall.png" alt="Античная статуя кучерявого голого юноши." class="cards__image">
             <h4 class="cards__title">Recall</h4>
             <p class="cards__description">Вспоминайте изученное - это позволит соединить разрозненные порции памяти.</p>
           </div>
           <div class="cards__item">
-            <img src="images/cards-interliving.png" alt="Интерливинг pic" class="cards__image">
+            <img src="images/cards-interliving.png" alt="Огромный ангар, освещенный лампами дневного света." class="cards__image">
             <h4 class="cards__title">Интерливинг</h4>
             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
           </div>
           <div class="cards__item">
-            <img src="images/cards-question.png" alt="Вопросы pic" class="cards__image">
+            <img src="images/cards-question.png" alt="Человек стоит в большой комнате с множеством небольших окон." class="cards__image">
             <h4 class="cards__title">Вопросы</h4>
             <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас действительно волнует.</p>
           </div>
           <div class="cards__item">
-            <img src="images/cards-competence.png" alt="Иллюзия компетентности pic" class="cards__image">
+            <img src="images/cards-competence.png" alt="Мужская рука, поднятая вверх, держит на ладони стопку книг." class="cards__image">
             <h4 class="cards__title">Иллюзия компетентности</h4>
             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется, что вы владеете новой темой.</p>
           </div>
@@ -102,7 +100,7 @@ src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
         <a href="#" class='feynman__link'>
           Подробнее &xrarr;
         </a>
-        <img src="./images/feynman.png" alt="Фото Фейнмана" class="feynman__illustration">
+        <img src="./images/feynman.png" alt="Портрет улыбающегося мужчины в пиджаке и галстуке." class="feynman__illustration">
       </section>
       <section class="digits">
         <h2 class="section-title">
@@ -152,12 +150,13 @@ src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
         <div class="khan__container">
           <h2 class="khan__author">Салман Хан</h2>
           <h3 class="khan__title">Весь мир - школа</h3>
-          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу "Весь мир - школа" нужно прочитать всем, кто занимается образованием - так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</p>
-          <h4 class="khan__quote-author">Джордж Лукас</h4>
-          <h5 class="khan__quote-author-subline">Кинорежиссер, продюсер</h5>
+          <blockquote class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения миллионов студентов по всему миру. Книгу "Весь мир - школа" нужно прочитать всем, кто занимается образованием - так учащиеся повсюду смогут получить навыки и знания, которые приносят успех в школе, карьере и жизни.</blockquote>
+          <p class="khan__quote-author">Джордж Лукас</p>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
+            <!--Обертку сразу ниже коммента удалить не могу, т.к. картинка должна натурально входить в заданые размеры и обрезаться за их пределами. Нашел только 3 способа: 1.использовать overflow:hidden у блока, родительского картинке, 2.Перенести картинку в качестве background-image в css (тогда не получится поставить alt), 3.Использовать object-fit, но эта функция не позволяет прилеплять картинку верхним левым краем к top и left заданного прямоугольника одновременно-->
             <div class="khan__book-pic">
-              <img src="images/khan-book.jpg" alt="книга pic">
+              <img src="images/khan-book.jpg" alt="Обложка книги в виде детского рисунка с изображением континентов земного шара.">
             </div>
             <a href="#" class="khan__buy-link">
               Купить книгу &xrarr;
@@ -214,9 +213,7 @@ src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </div>
         </div>
-        <div class="rotation">
-          <div class="kaufman__triangle"></div>
-        </div>
+        <div class="kaufman__triangle rotation"></div>
       </section>
       <section class="resources">
         <h2 class="section-title">
@@ -226,26 +223,18 @@ src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
           Больше материалов о техниках и лайфхаках обучения
         </h3>
         <div class="resources__logo-zone">
-          <div class="resources__logo">
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" class="resources__logo">
               <img src="./images/logo/resources-arzamas.svg" alt="Арзамас лого">
             </a>
-          </div>
-          <div class="resources__logo">
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" class="resources__logo">
               <img src="./images/logo/resources-n1.svg" alt="Н+1 лого">
             </a>
-          </div>
-          <div class="resources__logo">
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" class="resources__logo">
               <img src="./images/logo/resources-strelka.svg" alt="Стрелка лого">
             </a>
-          </div>
-          <div class="resources__logo">
-            <a href="#" target="_blank">
+            <a href="#" target="_blank" class="resources__logo">
               <img src="./images/logo/resources-polka.svg" alt="Полка лого">
             </a>
-          </div>
         </div>
       </section>
     </main>
@@ -253,14 +242,14 @@ src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <img src="./images/logo_place_footer.svg" alt="Лого" class="logo logo_place_footer">
-          <h2 class="footer__author">
+          <p class="footer__author">
             &copy;2019. Виктор Абанькин
-          </h2>
+          </p>
         </div>
         <div class="footer__column footer__column_content_info">
-          <h3 class="footer__column footer__column-heading">
+          <h2 class="footer__column-heading">
             О Практикуме
-          </h3>
+          </h2>
           <!--Меню О Практикуме-->
           <nav class="footer__column-links">
             <a href="#" target="_blank" class="footer__column-link">
@@ -275,9 +264,9 @@ src="https://www.youtube.com/embed/5MgBikgcWnY" allowfullscreen></iframe>
           </nav>
         </div>
         <div class="footer__column footer__column_content_social">
-          <h3 class="footer__column-heading">
+          <h2 class="footer__column-heading">
             Соцсети
-          </h3>
+          </h2>
           <!--Меню Соцсети-->
           <nav class="footer__column-links">
             <!--Facebook-->
